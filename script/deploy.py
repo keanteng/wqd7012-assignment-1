@@ -10,7 +10,7 @@ login(token=token)
 # create or check the repository
 from huggingface_hub import create_repo, Repository
 repo_name = "keanteng/wqd7012"
-create_repo(repo_name, exist_ok=True)
+create_repo(repo_name, exist_ok=True, repo_type="space")
 
 # upload the model to Hugging Face Hub
 api = HfApi()
